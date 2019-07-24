@@ -14,6 +14,9 @@
 
   <h3>Messages</h3>
   <ul class="messages">
+    <!-- LOOP THROUGH ARRAY OF ALL MESSAGES -->
+    <!-- SAME COUNTER/NUMBER for thumbUp and thumbDown  -->
+    <!-- <span><messages[i].thumbUp></span> -->
   <% for(var i=0; i<messages.length; i++) {%>
     <li class="message">
       <span><%= messages[i].name %></span>
@@ -28,6 +31,7 @@
 
   <h2>Add a message</h2>
 
+<!-- forms are POSTS/CREATE -->
   <form action="/messages" method="POST">
     <input type="text" placeholder="name" name="name">
     <input type="text" placeholder="message" name="msg">
